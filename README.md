@@ -55,9 +55,17 @@ _*In this tutorial, `--disable-keypair` flag was used to skip assigning EC2 key 
 
 ## 4. Deploy App
 
-Use [deploy](https://github.com/coldbrewcloud/coldbrew-cli/wiki/CLI-Command:-deploy) command.
+Now you use [deploy](https://github.com/coldbrewcloud/coldbrew-cli/wiki/CLI-Command:-deploy) command to build the Docker container image and deploy it to AWS ECS.
 
-## 5.
+```bash
+coldbrew deploy
+```
+
+<img src="https://raw.githubusercontent.com/coldbrewcloud/assets/master/coldbrew-cli/tutorial-wordpress-deploy.gif?v=1" width="800">
+
+## 5. (work in progress)
+
+.... check status, load balancer URL ...
 
 ## Notes
 
@@ -68,14 +76,8 @@ Docker container used in this tutorial contains:
 - Apache/2.4.6 (CentOS)
 - PHP 7.0
 
-### 
+### Scalable WordPress
 
-Running WordPress in Docker container has some other challenges.
-
-- Docker containers 
-
-- update db connection info
-- regen salts: https://api.wordpress.org/secret-key/1.1/salt/
-- S3 upload
-- disable automatic updater
-- HTTPS support
+To run WordPress in scalable setup, you need to consider following things: 
+- Use remote storage for media files (e.g. [S3 Uploads plugin](https://github.com/humanmade/S3-Uploads)).
+- Disable automatic version updater (as like [wp-config.php](https://github.com/coldbrewcloud/tutorial-wordpress/blob/master/wp-config.php#L82-L83) in this tutorial)
