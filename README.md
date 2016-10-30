@@ -53,6 +53,8 @@ coldbrew cluster-create tutorial --disable-keypair
 
 _*In this tutorial, `--disable-keypair` flag was used to skip assigning EC2 key pairs to ECS Container Instances, but, that's not recommended if you need to access the instances directly (e.g. via SSH)._
 
+_*It will take a couple of minutes until the cluster have computing capacity because EC2 Instances (ECS Container Instances) need to _
+
 ## 4. Deploy App
 
 Now you use [deploy](https://github.com/coldbrewcloud/coldbrew-cli/wiki/CLI-Command:-deploy) command to build the Docker container image and deploy it to AWS ECS.
@@ -66,6 +68,22 @@ coldbrew deploy
 ## 5. (work in progress)
 
 .... check status, load balancer URL ...
+
+## 6. Clean Up
+
+You can delete all resources for the app and cluster using [deploy](https://github.com/coldbrewcloud/coldbrew-cli/wiki/CLI-Command:-delete) and [cluster-delete](https://github.com/coldbrewcloud/coldbrew-cli/wiki/CLI-Command:-cluster-delete) respectively.
+
+```bash
+coldbrew delete
+```
+
+<img src="https://raw.githubusercontent.com/coldbrewcloud/assets/master/coldbrew-cli/tutorial-wordpress-delete.gif?v=1" width="800">
+
+```bash
+coldbrew cluster-delete tutorial
+```
+
+<img src="https://raw.githubusercontent.com/coldbrewcloud/assets/master/coldbrew-cli/tutorial-wordpress-cluster-delete.gif?v=1" width="800">
 
 ## Notes
 
