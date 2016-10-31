@@ -94,6 +94,12 @@ coldbrew cluster-delete tutorial
 
 ## Notes
 
+### Why running WordPress on Docker
+- Easier to scale
+- Consistent running environment
+- Maintain things as code
+- Easier to integrate in CI
+
 ### Docker Container
 
 Docker container used in this tutorial contains:
