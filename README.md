@@ -61,7 +61,7 @@ coldbrew cluster-create tutorial --disable-keypair
 
 _*In this tutorial, `--disable-keypair` flag was used to skip assigning EC2 key pairs to ECS Container Instances, but, that's not recommended if you need to access the instances directly (e.g. via SSH)._
 
-_*It will take a couple of minutes until the cluster have computing capacity because EC2 Instances (ECS Container Instances) need to _
+_*It will take a couple of minutes until all EC2 Instances (ECS Container Instances) finish initialization and register to ECS Cluster. But you can proceed to deploy your app._
 
 ## 4. Deploy App
 
