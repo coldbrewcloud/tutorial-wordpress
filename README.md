@@ -1,6 +1,6 @@
 # Tutorial - WordPress
 
-This is a sample project to demonstrate how to run a scalable WordPress[https://wordpress.org/] website on AWS using [coldbrew-cli](https://github.com/coldbrewcloud/coldbrew-cli).
+This is a sample project to demonstrate how to run a scalable [WordPress](https://wordpress.org/) website on AWS using [coldbrew-cli](https://github.com/coldbrewcloud/coldbrew-cli).
 
 ## 0. Prerequisites
 
