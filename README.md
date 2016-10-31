@@ -104,5 +104,6 @@ Docker container used in this tutorial contains:
 ### Scalable WordPress
 
 To run WordPress in scalable setup, you need to consider following things: 
+- To add/change plugins or themes, you need to do it in your local copy and then deploy. If you add something in the remote website directly, the change will be gone in the next deploy.
 - Use remote storage for media files (e.g. [S3 Uploads plugin](https://github.com/humanmade/S3-Uploads)).
 - Disable automatic version updater (`wp-config.php` in this tutorial [has already disabled](https://github.com/coldbrewcloud/tutorial-wordpress/blob/master/wp-config.php#L82-L83) it)
