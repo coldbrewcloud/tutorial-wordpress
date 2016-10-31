@@ -41,11 +41,11 @@ You typically update [wp-config.php](https://codex.wordpress.org/Editing_wp-conf
 At the minimum, you should configure 2 things:
 
 #### Database settings (Required)
-  - Update `wp-config.php` file with your MySQL username, password, host, and database name.
+  - Update [wp-config.php](https://github.com/coldbrewcloud/tutorial-wordpress/blob/master/wp-config.php#L23-L38) file with your MySQL username, password, host, and database name.
   - See more details [here](https://codex.wordpress.org/Editing_wp-config.php#Configure_Database_Settings).
   
 #### Configure authentication keys and salts (Highly Recommended)
-  - Generate a new keys/salts and update them in `wp-config.php` file.
+  - Generate a new keys/salts and update them in [wp-config.php](https://github.com/coldbrewcloud/tutorial-wordpress/blob/master/wp-config.php#L49-L56) file.
   - You can use [WordPress secret key service](https://api.wordpress.org/secret-key/1.1/salt/).
   - See more details [here](https://codex.wordpress.org/Editing_wp-config.php#Security_Keys).
 
