@@ -4,15 +4,21 @@ This is a sample project created to demonstrate how to run a scalable WordPress[
 
 ## 0. Prerequisites
 
-To get started, you will need to install 
-- [coldbrew-cli](https://github.com/coldbrewcloud/coldbrew-cli)
-- [Docker](https://docs.docker.com/engine/installation/)
+#### Docker
 
-And, you will also need
-- Your [AWS access keys](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html)
-  - [Sign up](https://aws.amazon.com/) if you don't have an AWS account.
-- Your MySQL server connection information: username, password, database host, and, database name
-  - See [AWS RDS Tutorial](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MySQL.html) if you want to create a MySQL instance in AWS.
+Install [Docker](https://docs.docker.com/engine/installation/) in your system. Make sure you can run `docker` from your command line.
+
+#### coldbrew-cli
+
+Install [coldbrew-cli](https://github.com/coldbrewcloud/coldbrew-cli/wiki/Downloads). 
+
+#### AWS Account Keys
+
+You will need [AWS access keys](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html) to configure **coldbrew-cli**. Either set the [environment variables](https://github.com/coldbrewcloud/coldbrew-cli/wiki/CLI-Environment-Variables) or use [CLI Global Flags](https://github.com/coldbrewcloud/coldbrew-cli/wiki/CLI-Global-Flags).
+
+#### MySQL Server
+
+In this tutorial, you will need a running MySQL server for WordPress. See [AWS RDS Tutorial](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MySQL.html) if you want to create a MySQL instance in AWS.
 
 ## 1. Clone This Repo
 
