@@ -65,9 +65,16 @@ coldbrew deploy
 
 <img src="https://raw.githubusercontent.com/coldbrewcloud/assets/master/coldbrew-cli/tutorial-wordpress-deploy.gif?v=1" width="800">
 
-## 5. (work in progress)
+Now you just need to wait a couple more minutes _(or even less if it's not the first deploy)_ until all AWS resources get fully configured.
 
-.... check status, load balancer URL ...
+## 5. Check the Status
+
+Use [status](https://github.com/coldbrewcloud/coldbrew-cli/wiki/CLI-Command:-staus) command to see the current running status of your app.
+
+```bash
+coldbrew status
+```
+<img src="https://raw.githubusercontent.com/coldbrewcloud/assets/master/coldbrew-cli/tutorial-wordpress-status.gif?v=1" width="800">
 
 ## 6. Clean Up
 
@@ -98,4 +105,4 @@ Docker container used in this tutorial contains:
 
 To run WordPress in scalable setup, you need to consider following things: 
 - Use remote storage for media files (e.g. [S3 Uploads plugin](https://github.com/humanmade/S3-Uploads)).
-- Disable automatic version updater (as like [wp-config.php](https://github.com/coldbrewcloud/tutorial-wordpress/blob/master/wp-config.php#L82-L83) in this tutorial)
+- Disable automatic version updater (`wp-config.php` in this tutorial [has already disabled](https://github.com/coldbrewcloud/tutorial-wordpress/blob/master/wp-config.php#L82-L83) it)
