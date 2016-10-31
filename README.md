@@ -33,10 +33,10 @@ This project contains
 You typically update [wp-config.php](https://codex.wordpress.org/Editing_wp-config.php) file to configure your WordPress website. In this tutorial, you should update [wp-config.php](https://github.com/coldbrewcloud/tutorial-wordpress/blob/master/wp-config.php) located at the project root, then [Docker build](https://github.com/coldbrewcloud/tutorial-wordpress/blob/master/Dockerfile#L9) will copy the file to a proper location (`wordpress/wp-config.php`).
 
 At the minimum, you should configure 2 things:
-- Database settings
+#### Database settings (Required)
   - Update `wp-config.php` file with your MySQL username, password, host, and database name.
   - See more details [here](https://codex.wordpress.org/Editing_wp-config.php#Configure_Database_Settings).
-- Configure authentication keys and salts
+#### Configure authentication keys and salts (Highly Recommended)
   - Generate a new keys/salts and update them in `wp-config.php` file.
   - You can use [WordPress secret key service](https://api.wordpress.org/secret-key/1.1/salt/).
   - See more details [here](https://codex.wordpress.org/Editing_wp-config.php#Security_Keys).
